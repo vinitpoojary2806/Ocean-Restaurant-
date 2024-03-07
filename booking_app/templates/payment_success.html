@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block base %}
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+    <body class="text-center">
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark" style = "color: #9ABC66; font-size: 100px">✓</i>
+      </div>
+      <h1 style="color: #88B04B; font-family: 'Nunito Sans', 'Helvetica Neue', sans-serif">Payment Successful</h1>
+      <p style="color: #404F5E">Your flight booking has been successfully processed.<br/>In order to view all your bookings click on the link below.</p>
+      <a href="/booking_app/details">Get Details</a>
+      
+      {% for bac in bookings %}
+      <li>{{bac.id}}</li>
+      {% endfor %} 
+    
+      </div>
+    </body>
+</html>
+
+{% endblock base %}

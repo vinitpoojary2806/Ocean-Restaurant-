@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<body>
+    <div class="container-fluid py-3">
+        <div class="container py-3">
+            <div class="text-center mb-3 pb-3">
+                <h1>Book Tickets</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form bg-white" style="padding: 30px;">
+                        <div class="container">
+                            <form method="post">
+                                {% csrf_token %}
+                               <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="source" class="form-label">Source:</label>
+                                        <input type="text" name="source" id="source" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="form-group col-sm-6">
+                                        <label for="destination" class="form-label">Destination:</label>
+                                        <input type="text" name="destination" id="destination" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="departure_date" class="form-label">Departure Date:</label>
+                                        <input type="date" name="departure_date" id="departure_date" class="form-control" required>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="return_date" class="form-label">Return Date:</label>
+                                        <input type="date" name="return_date" id="return_date" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="flight_name" class="form-label">Flight Name:</label>
+                                        <input type="text" name="flight_name" id="flight_name" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Payment Information:</label>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="card_number" class="form-label">Card Number:</label>
+                                        <input type="text" name="card_number" id="card_number" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="form-group col-sm-6">
+                                        <label for="expiration_date" class="form-label">Expiration Date:</label>
+                                        <input type="text" name="expiration_date" id="expiration_date" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="cvv" class="form-label">CVV:</label>
+                                        <input type="password" name="cvv" id="cvv" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="text-center py-3">
+                                    <button  type="submit" class="submit-button btn btn-primary py-3 px-4">Book Flight</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock base %}
