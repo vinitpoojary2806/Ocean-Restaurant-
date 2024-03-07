@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block base %}
+
+ <!-- Navbar & Hero Start -->
+ <div class="container-xxl position-relative p-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+      <a href="" class="navbar-brand p-0">
+          <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Ocean Family ♾️</h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0 pe-4">
+              <a href="/" class="nav-item nav-link">Home</a>
+              <a href="/about" class="nav-item nav-link">About</a>
+              <a href="/service" class="nav-item nav-link">Service</a>
+              <a href="/category" class="nav-item nav-link active">Category</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu m-0">
+                      <a href="/bookings" class="dropdown-item">Booking</a>
+                      <a href="/teams" class="dropdown-item">Our Team</a>
+                      <a href="/testimonials" class="dropdown-item">Testimonial</a>
+                  </div>
+              </div>
+              <a href="/contacts" class="nav-item nav-link">Contact</a>
+          </div>
+          <a href="/accounts/login" class="btn btn-primary py-2 px-4">Book A Table</a>
+      </div>
+  </nav>
+
+  <div class="container-xxl py-5 bg-dark hero-header mb-5">
+      <div class="container text-center my-5 pt-5 pb-4">
+          <h1 class="display-3 text-white mb-3 animated slideInDown">French Potato Chilli Mustered Sauce</h1>
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase">
+                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">French Potato Chilli Mustered Sauce</li>
+              </ol>
+          </nav>
+      </div>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<body>
+    {% for dish in dishes %}
+    <!-- Blog Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-20">
+                <!-- Blog Detail Start -->
+                <div class="pb-3">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="/media/{{dish.img}}">
+                        </div>
+                    </div>
+                    <div class="bg-white mb-3" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <a class="text-primary text-uppercase text-decoration-none" href="">Dishes</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-primary text-uppercase text-decoration-none" href="">Details</a>
+                        </div>
+                        <h2 class="mb-3">{{dish.title}}</h2>
+                        <h4 class="mb-3">Price</h4>
+                        <p>{{dish.price}}</p>
+                        <h4 class="mb-3">Recipe</h4>
+                        <p>{{dish.desc | linebreaks}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+
+{% endblock base %}

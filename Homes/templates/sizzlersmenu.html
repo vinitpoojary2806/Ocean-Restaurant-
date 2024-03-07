@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<!-- Navbar & Hero Start -->
+<div class="container-xxl position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Ocean Family ♾️</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+                <a href="/service" class="nav-item nav-link">Service</a>
+                <a href="/category" class="nav-item nav-link active">Category</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/bookings" class="dropdown-item">Booking</a>
+                        <a href="/teams" class="dropdown-item">Our Team</a>
+                        <a href="/testimonials" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="/contacts" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="/accounts/login" class="btn btn-primary py-2 px-4">Book A Table</a>
+        </div>
+    </nav>
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Biryani Menu</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+<!-- Menu Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Biryani Menu</h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                        <i class="fa fa-utensils fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Lovely</small>
+                            <h6 class="mt-n1 mb-0">Dinner</h6>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Kampuri Biryani</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">The biryani owns it's origin to tea state of Assam, Kampuri biryani is a fusion of the local vegetables with chicken, rice and spices.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Goan Fish Biryani</span>
+                                        <span class="text-primary">₹600</span>
+                                    </h5>
+                                    <small class="fst-italic">Coming from the sea-land of goa, the Goan fish biryani is famous for using fish, giving a different twist to the meat dominated dish.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Hyderabadi Biryani</span>
+                                        <span class="text-primary">₹500</span>
+                                    </h5>
+                                    <small class="fst-italic">Hyderabadi biryani is a favourite of many food lovers throughout India and the world even. The strong aroma of the biryani comes from the kewda, rose water and saffron that is sprinkled on the biryani.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Kashmiri Biryani</span>
+                                        <span class="text-primary">₹550</span>
+                                    </h5>
+                                    <small class="fst-italic">The Kashmiri Biryani is a perfect mix of tender chicken and rice with dried fruits and Kashmiri spices, and they stand out the ingredient of asafoetida.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Kolkata Biryani</span>
+                                        <span class="text-primary">₹500</span>
+                                    </h5>
+                                    <small class="fst-italic">The biryani cooked with rice with a yoghurt based marinated meat, the aloo, and boiled egg along with light spices which give it a slight sweetness and saffron and kewra for the aroma.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Mutton Biryani</span>
+                                        <span class="text-primary">₹600</span>
+                                    </h5>
+                                    <small class="fst-italic">The beautifully spiced and fragrant layers of biryani rice centred with juicy, tender meat and spices is pure bliss!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Thalassery Biryani</span>
+                                        <span class="text-primary">₹400</span>
+                                    </h5>
+                                    <small class="fst-italic">This biryani comes from the Malabar region of Kerala, and is also known as Malabar Biryani. It uses a small-grained thin fragrant variety of locally grown rice known as Khyma or Jeerakasala, as well as Malabar spices, meat, fried onions, ghee, cashews and raisins, and is known for being both sweet and spicy.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Tehari Biryani</span>
+                                        <span class="text-primary">₹400</span>
+                                    </h5>
+                                    <small class="fst-italic">While most traditional biryanis are made with meat, Tehari biryani is a vegetarian version. It is said to have been created for the vegetarian Hindu bookkeepers at the Mughal court and is made with potatoes instead of meat. </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Menu End -->
+
+{% endblock base %}

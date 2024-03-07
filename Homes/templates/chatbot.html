@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block base %}
+<!-- Navbar & Hero Start -->
+<div class="container-xxl position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Ocean Family ♾️</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="/about" class="nav-item nav-link active">About</a>
+                <a href="/service" class="nav-item nav-link">Service</a>    
+                <a href="/category" class="nav-item nav-link">Category</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/bookings" class="dropdown-item">Booking</a>
+                        <a href="/teams" class="dropdown-item">Our Team</a>
+                        <a href="/testimonials" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="/contacts" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="/bookings" class="btn btn-primary py-2 px-4">Book A Table</a>
+        </div>
+    </nav>
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End --> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY CHATBOT</title>
+</head>
+<body>
+
+<h1>ChatBot</h1>
+
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"31c25275c5d68f6e801351d9988f14748","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
+</body>
+</html>
+
+{% endblock base %}

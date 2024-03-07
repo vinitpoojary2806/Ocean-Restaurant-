@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<div class="text-center mt-5 mb-4">
+    <p class="text-uppercase mb-1" style="font-weight: 500; letter-spacing: 5px;">Booking Table</p>
+    <h1 class="text-primary">Your Bookings</h1>
+</div>
+
+<table class="table table-striped table-dark text-center mt-3 mb-5">
+    <thead>
+            <tr>
+            <td>Sr.NO</td>
+            <td>Source</td>
+            <td>Destination</td>
+            <td>Action</td>
+            <tr>
+    </thead>
+    <tbody>
+        {% for b in bookings %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{b.source}}</td>
+            <td>{{b.destination}}</td>
+            <td><a href="/booking_app/bills/{{b.id}}" class="btn btn-danger">Get Bill</a></td>
+        </tr>
+        {% empty %}
+        <p>NO entries</p>
+        {% endfor %}
+    </tbody>
+</table>
+</br>
+{% endblock base %}

@@ -1,0 +1,325 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<!-- Navbar & Hero Start -->
+<div class="container-xxl position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Ocean Family ♾️</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+                <a href="/service" class="nav-item nav-link">Service</a>
+                <a href="/category" class="nav-item nav-link active">Category</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/bookings" class="dropdown-item">Booking</a>
+                        <a href="/teams" class="dropdown-item">Our Team</a>
+                        <a href="/testimonials" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="/contacts" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="/accounts/login" class="btn btn-primary py-2 px-4">Book A Table</a>
+        </div>
+    </nav>
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Deserts Menu</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+<!-- Menu Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Deserts Menu</h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                        <i class="fa fa-coffee fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Popular</small>
+                            <h6 class="mt-n1 mb-0">Ice Creams</h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                        <i class="fa fa-hamburger fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Special</small>
+                            <h6 class="mt-n1 mb-0">Indian Sweets</h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                        <i class="fa fa-utensils fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Sizzling</small>
+                            <h6 class="mt-n1 mb-0">Brownie</h6>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <a href ="/icecreamfloat">
+                                        <span>Ice Cream Float</span>
+                                    </a>
+                                        <span class="text-primary">₹350</span>                                        
+                                    </h5>
+                                    <small class="fst-italic">An ice cream float is a beverage consisting of ice cream that is placed in a soft, fizzy drink. One of the most popular varieties of the beverage is a root beer float. The origins of ice cream floats date back to the 19th century. It was invented in Philadelphia by Robert Green, a soda shop operator who ran out of cream and decided to use ice cream instead of it.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Gelato al pistacchio</span>
+                                        <span class="text-primary">₹500</span>
+                                    </h5>
+                                    <small class="fst-italic">Pistachio is one of the most popular flavors of Italian gelato. A mainstay in every gelateria, in its original form, this frozen treat combines pistachio paste with the classic base of milk, cream, eggs, and sugar. Occasionally, crushed and toasted pistachios can be added, but the basic texture should always remain dense and creamy.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Ice Cream Sandwich</span>
+                                        <span class="text-primary">₹200</span>
+                                    </h5>
+                                    <small class="fst-italic">Ice cream sandwich is an American dessert that dates back to New York City in 1899. It was allegedly invented by an unknown pushcart vendor in the Bowery who sandwiched vanilla ice cream between two thin wafers. The treat was so popular that the vendor didn't have time to make a change, so he charged a penny per ice cream sandwich.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sundae</span>
+                                        <span class="text-primary">₹400</span>
+                                    </h5>
+                                    <small class="fst-italic">Along with Banana Split, sundae is one of the most served ice cream-based desserts in the United States of America. A sundae is ice cream topped with a sauce or syrup, typically served in a bowl. The most popular varieties of sundae are chocolate caramel, butterscotch, and strawberry.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Dondurma</span>
+                                        <span class="text-primary">₹400</span>
+                                    </h5>
+                                    <small class="fst-italic">Turkish ice cream is believed to originate from the city of Maraş—hence the name—and what really sets it apart from other varieties is its resistance to melting and a particularly dense, chewy texture. These qualities are brought by adding two thickening agents to the basic milk and sugar mixture: Arab gum, also known as mastic resin, and salep—a type of flour made from the root of the early purple orchid.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Chocolate</span>
+                                        <span class="text-primary">₹200</span>
+                                    </h5>
+                                    <small class="fst-italic">Chocolate is a crowd favorite because, like vanilla, it's versatile. Unlike vanilla, it has a lot of variations: chocolate chunk, fudge swirl, mudslide. Along with that, chocolate ice cream is a favorite of many because it can be rich or light. It can also be dressed up in a sundae or eaten by itself.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Cookies & Cream</span>
+                                        <span class="text-primary">₹250</span>
+                                    </h5>
+                                    <small class="fst-italic">Cookies & cream is a new take on vanilla, because it has chunks of cookies so your customers can eat a lot without getting bored with their ice cream. This is also great ice cream for waffle cones and ice cream sandwiches. </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Moose tracks</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">This fun treat has a lot of chunks! It's vanilla ice cream, peanut butter cups, and fudge. It's a new perspective for vanilla ice cream. There's enough going on that it doesn't need to be a sundae, it's delicious all on its own!</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Gulab Jamun</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">India’s most famous and favorite dessert, Gulab Jamun. Soft, spongy and melt in your mouth, Gulab Jamun is drenched in delicately flavored sugar syrup. It’s a traditional sweet perfect for birthdays, parties, celebrations, and festivals!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Gajar ka Halwa</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">This Gajar Halwa is one of quintessential winter desserts, especially in North Indian, and is rich and decadent. This delicious dessert is delicately scented with cardamom powder and garnished with nuts, making it irresistibly tasty. It is served hot or cold during all festivals in India!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Falooda</span>
+                                        <span class="text-primary">₹200</span>
+                                    </h5>
+                                    <small class="fst-italic">Falooda is a delicious dessert drink and a perfect summer treat to satisfy your sweet cravings! It’s a dessert, beverage, sundae and ice cream float all rolled into one fabulous concoction, which is very easy to make. With its origin in Persian cuisine, this dessert drink has become a favorite summer obsession throughout the Indian subcontinent!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Jalebi</span>
+                                        <span class="text-primary">₹150</span>
+                                    </h5>
+                                    <small class="fst-italic">Jalebi, a Spiral shaped crunchy sweet dipped in saffron laced sugar syrup, is a traditional and very famous Indian sweet. It’s generally prepared on the festivals like Diwali and Ramadan, and is enjoyed with Rabadi (thickened milk) or other Indian snacks.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Coconut Burfi</span>
+                                        <span class="text-primary">₹200</span>
+                                    </h5>
+                                    <small class="fst-italic">This Coconut Burfi is a simple and tasty Indian fudge recipe prepared mainly with grated coconut, sugar and a hint of cardamom.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Mysore Pak</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Mysore Pak – make any occasion extra special with this classic South Indian sweet! With its amazing melt in your mouth texture, this is sure to impress kids and adults alike. </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Chocolate Eggless Sizzling Brownies</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">To furnish the varied necessities of our customers in best possible way, we are involved in presenting Sizzling Brownies.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Chocolate Walnut Brownie</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sizzling brownie with Ice cream</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Gooey & Fudgy chocolate mini egg brownies </span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Menu End -->
+
+{% endblock base %}

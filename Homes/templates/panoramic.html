@@ -1,0 +1,34 @@
+{% extends "masterPage.html" %}
+
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Model Viewer</title>
+
+    <style>
+        model-viewer{
+            height: 750px;
+            width: 100%;
+        }
+
+        body{
+            background-color: #414141;
+        }
+        
+    </style>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+</head>
+<body>
+    {% for place in places %}
+<p>{{place.country}} </p>
+    <model-viewer alt="car" src="/media/{{place.img3d}}" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+    {% endfor %}
+</body>
+</html>
+{% endblock base %}

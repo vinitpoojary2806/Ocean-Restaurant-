@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<!-- Navbar & Hero Start -->
+<div class="container-xxl position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Ocean Family ♾️</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+                <a href="/service" class="nav-item nav-link">Service</a>
+                <a href="/category" class="nav-item nav-link active">Category</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="/bookings" class="dropdown-item">Booking</a>
+                        <a href="/teams" class="dropdown-item">Our Team</a>
+                        <a href="/testimonials" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="/contacts" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="/accounts/login" class="btn btn-primary py-2 px-4">Book A Table</a>
+        </div>
+    </nav>
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Mocktail Menu</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+<!-- Menu Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Mocktail Menu</h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                        <i class="fa fa-coffee fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Popular</small>
+                            <h6 class="mt-n1 mb-0">Mocktail</h6>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Summerberry Cooler</span>
+                                        <span class="text-primary">₹350</span>
+                                    </h5>
+                                    <small class="fst-italic">Raspberry, apple juice, strawberry and concentrated lemonade altogether make for a frosty summer treat that everyone will adore.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Citrus Strawberry Mocktail</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Refresh and rehydrate with this citrusy drink! Several ingredients combine to create this colorful treat, made with strawberry, orange juice, icing sugar, sparkling powder, and a hint of basil.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sparkling Cherry Limeade</span>
+                                        <span class="text-primary">₹300</span>
+                                    </h5>
+                                    <small class="fst-italic">Cherry juice, lemon wedges, lime juice and sugar pair together deliciously with sparkling water. This is just what you need!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Mango-Freeze</span>
+                                        <span class="text-primary">₹250</span>
+                                    </h5>
+                                    <small class="fst-italic">It’s a refreshingly delicious way to use up any leftover mangoes hanging out in your fridge!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>​Beach Tropicana</span>
+                                        <span class="text-primary">₹200</span>
+                                    </h5>
+                                    <small class="fst-italic">The flavor combination is so addictive you'll find yourself craving for more.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>​Cherries and Watermelon Slush</span>
+                                        <span class="text-primary">₹350</span>
+                                    </h5>
+                                    <small class="fst-italic">Low in sugar, this mocktail makes for a refreshing drink and will energize your evening.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Mint Zing</span>
+                                        <span class="text-primary">₹150</span>
+                                    </h5>
+                                    <small class="fst-italic"> Quench your thirst with this refreshing drink, loaded with fresh fruits and herbs. It’s a low calorie sweet fruity drink that will give your digestive system a healthy boost!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Red Cider</span>
+                                        <span class="text-primary">₹250</span>
+                                    </h5>
+                                    <small class="fst-italic">This non-alcoholic sangria has no added sugar and is made with apple juice and cranberry juice instead of red wine.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Menu End -->
+
+{% endblock base %}
